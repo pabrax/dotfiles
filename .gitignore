@@ -1,0 +1,25 @@
+/*
+
+# config files
+!.config
+
+# repo files
+!.gitignore
+!README.md
+
+# shells
+!.zshrc
+!.bashrc
+
+# editors
+!.vimrc
+
+# layout
+!.screenlayout
+
+# wallpapers
+
+!Pictures/wallpapers
+
+
+

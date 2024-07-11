@@ -2,6 +2,15 @@
 !.gitignore
 !bspwm
 !kitty
-!Code/User/settings.json
 !nvim
+
+# code configs
+!Code/
+Code/*
+
+!Code/User/
+Code/User/*
+
+
+!Code/User/settings.json
 

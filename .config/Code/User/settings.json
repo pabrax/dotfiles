@@ -1,0 +1,36 @@
+{
+    "editor.fontSize": 17,
+    "editor.fontFamily": "'ComicShannsMono Nerd Font' , 'CodeNewRoman Nerd Font', Mononoki Nerd Font, Consolas, 'Courier New', monospace",
+    "editor.guides.bracketPairs": true,
+    "editor.cursorBlinking": "expand",
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "editor.linkedEditing": true,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.fontSize": 15,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "security.workspace.trust.untrustedFiles": "open",
+    "oneDarkPro.bold": true,
+    "oneDarkPro.vivid": true,
+    "oneDarkPro.editorTheme": "One Dark Pro Darker",
+    "telemetry.telemetryLevel": "off",
+    "editor.fontLigatures": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "php": "html"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.editor.showTabs": "multiple",
+    
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDelete": false,
+}

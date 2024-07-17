@@ -37,7 +37,7 @@ wdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 wallpaper="$wdir/wallpaper"
 
 # Polybar
-polybar_font='Iosevka Nerd Font:size=10;3'
+polybar_font='CodeNewRoman Nerd Font:size=10;3'
 
 # Rofi
 rofi_font='Iosevka 11'
@@ -48,7 +48,7 @@ terminal_font_name='JetBrainsMono Nerd Font'
 terminal_font_size='10'
 
 # vscode
-vscode_theme='Dark Horizon'
+vscode_theme='Aura Dark (Soft Text)'
 
 # Geany
 geany_colors='hack.conf'

@@ -57,7 +57,7 @@ ctrl + alt + l
 
 
 # keyboard layout
-super + i
+super + space
 	bsplayout
 
 # (fn keys)
@@ -161,11 +161,11 @@ super + f
     bspc node -t "~"fullscreen
 
 # Toggle beetwen floating & tiled
-super + space
+super + z
     bspc node -t "~"{floating,tiled}
 
 # Pseudo Tiled & tiled mode
-super + shift + space
+super + shift + z
     bspc node -t "~"{pseudo_tiled,tiled}
 
 # Set the node flags

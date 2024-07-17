@@ -52,7 +52,7 @@ geany_font='JetBrains Mono 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
-gtk_theme='Adapta-Nokto'
+gtk_theme='Material-Black-Lime'
 icon_theme='Archcraft-Dark'
 cursor_theme='Pear'
 

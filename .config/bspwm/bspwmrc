@@ -20,10 +20,10 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 ## Current theme ---------------------------------------------#
 
 ## Bspwm colors
-BSPWM_FBC='#8b4ba3'
-BSPWM_NBC='#1a1a27'
-BSPWM_ABC='#496d99'
-BSPWM_PFC='#9fddc9'
+BSPWM_FBC='#7aa2f7'
+BSPWM_NBC='#1a1b26'
+BSPWM_ABC='#7aa2f7'
+BSPWM_PFC='#74dd91'
 
 ## Bspwm appearance
 BSPWM_BORDER='2'
@@ -48,8 +48,8 @@ two_monitors_workspaces() {
 	INTERNAL_MONITOR="DVI-D-0"
 	EXTERNAL_MONITOR="HDMI-A-0"
 	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
-		bspc monitor "$EXTERNAL_MONITOR" -d '' '' '' ''
-		bspc monitor "$INTERNAL_MONITOR" -d '' '' '' ''
+		bspc monitor "$EXTERNAL_MONITOR" -d '' '' '' 
+		bspc monitor "$INTERNAL_MONITOR" -d '' '' '' '' ''
 		bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
 	else
 		bspc monitor "$INTERNAL_MONITOR" -d '' '' '' '' '' '' '' ''
@@ -104,27 +104,27 @@ bspc rule -a kitty desktop='^1' follow=on focus=on
 bspc rule -a kitty-fullscreen desktop='^1' state=fullscreen follow=on focus=on
 bspc rule -a Xfce4-terminal desktop='^1' follow=on focus=on
 
-## 2 > web (always open web browser on workspace-2)
-bspc rule -a firefox desktop='^5' follow=on focus=on
-bspc rule -a Brave-browser desktop='^5' follow=on focus=on
-
-## 3 > vms and more
-
-bspc rule -a "VirtualBox Machine" desktop='^3' follow=on focus=on
-bspc rule -a discord desktop='^3' follow=on focus=on
-bspc rule -a PacketTracer desktop='^3' follow=on focus=on
-
-## 4 > files (always open file manager on workspace-3)
-declare -a files=(Pcmanfm Thunar qBittorrent)
-for i in ${files[@]}; do
-   bspc rule -a $i desktop='^4' follow=on focus=on; done
-
-## 4 > code (always open editors on workspace-4)
+## 2 > code (always open editors on workspace-4)
 declare -a code=(Geany code-oss Code jetbrains-idea-ce)
 for i in ${code[@]}; do
    bspc rule -a $i desktop='^2' follow=on focus=on; done
 
+## 3 > vms and more
+bspc rule -a "VirtualBox Machine" desktop='^3' follow=on focus=on
+bspc rule -a PacketTracer desktop='^3' follow=on focus=on
+
+## 4 > web (always open web browser on workspace-2)
+bspc rule -a firefox desktop='^4' follow=on focus=on
+bspc rule -a Brave-browser desktop='^4' follow=on focus=on
+
+## 5 > files (always open file manager on workspace-3)
+declare -a files=(Pcmanfm Thunar qBittorrent)
+for i in ${files[@]}; do
+   bspc rule -a $i desktop='^5' follow=on focus=on; done
+
 ## 6 > office and docs (always open office/doc apps on workspace-5)
+bspc rule -a discord desktop='^6' follow=on focus=on
+
 declare -a office=(Gucharmap Atril Evince \
 libreoffice-writer libreoffice-calc libreoffice-impress \
 libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)

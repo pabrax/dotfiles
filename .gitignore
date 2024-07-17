@@ -21,3 +21,6 @@
 
 !Pictures/
 
+# screenshots
+!.screenshots/
+!screenshots/**

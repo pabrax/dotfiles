@@ -18,7 +18,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/bspwm"
-STYLE="catppuccin"
+STYLE="Tokyo_night"
 RASI="$DIR/themes/$STYLE/rofi/bluetooth.rasi"
 
 # Constants

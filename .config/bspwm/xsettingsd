@@ -1,8 +1,8 @@
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 
-Net/ThemeName "Dracula"
-Net/IconThemeName "Tela-black"
-Gtk/CursorThemeName "Qogirr"
+Net/ThemeName "Manhattan"
+Net/IconThemeName "Luv-Folders-Dark"
+Gtk/CursorThemeName "Vimix-Dark"
 Net/EnableEventSounds "0"
 Net/EnableInputFeedbackSounds "0"
 Xft/DPI "-1"

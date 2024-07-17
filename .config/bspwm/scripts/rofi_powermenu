@@ -4,7 +4,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/bspwm"
-STYLE="catppuccin"
+STYLE="Tokyo_night"
 RASI="$DIR/themes/$STYLE/rofi/powermenu.rasi"
 CNFR="$DIR/themes/$STYLE/rofi/confirm.rasi"
 

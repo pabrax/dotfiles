@@ -4,7 +4,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/bspwm"
-STYLE="Tokyo_night"
+STYLE="dark_horizon"
 RASI="$DIR/themes/$STYLE/rofi/screenshot.rasi"
 
 # Theme Elements
@@ -46,7 +46,7 @@ time=`date +%Y-%m-%d-%H-%M-%S`
 geometry=`xrandr | grep 'current' | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
 dir="`xdg-user-dir PICTURES`/Screenshots"
 file="Screenshot_${time}_${geometry}.png"
-border='0.479,0.634,0.969'
+border='0.808,0.808,0.808'
 
 # Directory
 if [[ ! -d "$dir" ]]; then

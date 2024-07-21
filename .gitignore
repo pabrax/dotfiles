@@ -24,3 +24,6 @@
 # screenshots
 !.screenshots/
 !screenshots/**
+
+# windows files
+!.windows_files/

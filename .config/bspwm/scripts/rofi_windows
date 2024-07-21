@@ -4,7 +4,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/bspwm"
-STYLE="Tokyo_night"
+STYLE="dark_horizon"
 RASI="$DIR/themes/$STYLE/rofi/windows.rasi"
 
 # Run

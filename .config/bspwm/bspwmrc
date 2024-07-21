@@ -20,13 +20,13 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 ## Current theme ---------------------------------------------#
 
 ## Bspwm colors
-BSPWM_FBC='#7aa2f7'
-BSPWM_NBC='#1a1b26'
-BSPWM_ABC='#7aa2f7'
-BSPWM_PFC='#74dd91'
+BSPWM_FBC='#cecece'
+BSPWM_NBC='#070707'
+BSPWM_ABC='#313033'
+BSPWM_PFC='#71c64e'
 
 ## Bspwm appearance
-BSPWM_BORDER='2'
+BSPWM_BORDER='1'
 BSPWM_GAP='10'
 BSPWM_SRATIO='0.50'
 
@@ -139,7 +139,7 @@ for i in ${media[@]}; do
 ## 8 > system (always open system apps on workspace-8)
 bspc rule -a 'VirtualBox Manager' desktop='^8' follow=on focus=on
 bspc rule -a GParted desktop='^8' follow=on focus=on
-declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
+declare -a settings=(Lxappearance balenaEtcher Lxtask Lxrandr Arandr \
 System-config-printer.py Grub-customizer Pavucontrol Exo-helper-1 \
 Xfce4-power-manager-settings)
 for i in ${settings[@]}; do

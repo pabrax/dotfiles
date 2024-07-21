@@ -13,7 +13,7 @@
         "editor.formatOnType": true
     },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Tokyo Night",
+    "workbench.colorTheme": "Aura Dark (Soft Text)",
     "security.workspace.trust.untrustedFiles": "open",
     "oneDarkPro.bold": true,
     "oneDarkPro.vivid": true,
@@ -33,5 +33,5 @@
 
     "workbench.sideBar.location": "right",
     "explorer.confirmDelete": false,
-    "cSpell.language": "en,es-ES",
+    "cSpell.language": "es-ES",
 }

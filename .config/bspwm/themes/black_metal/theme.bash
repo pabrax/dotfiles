@@ -40,7 +40,7 @@ wallpaper="$wdir/wallpaper"
 polybar_font='Iosevka Nerd Font:size=10;3'
 
 # Rofi
-rofi_font='Iosevka 11'
+rofi_font='Iosevka Nerd Font 11'
 rofi_icon='Papirus-Apps'
 
 # Terminal

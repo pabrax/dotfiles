@@ -9,6 +9,15 @@
 - [my dots](#my-dots)
     - [***content***](#content)
 - [Resumen](#resumen)
+  - [wallpapers](#wallpapers)
+- [setup](#setup)
+  - [Paquetes escenciales](#paquetes-escenciales)
+    - [Arch](#arch)
+    - [debian/ubuntu](#debianubuntu)
+      - [picom](#picom)
+      - [pastel](#pastel)
+    - [oh my zsh](#oh-my-zsh)
+      - [plugins:](#plugins)
 - [bspwm](#bspwm)
   - [keymaps](#keymaps)
     - [Terminal (kitty)](#terminal-kitty)
@@ -16,7 +25,7 @@
     - [Applications](#applications)
     - [System Keys](#system-keys)
     - [Bspwm](#bspwm-1)
-- [themes](#themes)
+- [Galeria](#galeria)
   - [current theme](#current-theme)
   - [Black Metal](#black-metal)
   - [Catppuccin](#catppuccin)
@@ -31,7 +40,7 @@ Esta es una recopilacion de mis archivos de configuracion de mi entorno de desar
 
 este entorno hace uso de BSPWM como manejador de ventanas y shxkd para la gestion de las teclas.
 
-Este repositorio contiene los archivos de configuración de mi entorno de desarrollo personalizado. Está diseñado para funcionar sobre una instalación limpia de Archcraft, una distribución de Linux basada en Arch que viene preconfigurada con herramientas y ajustes optimizados.
+Este repositorio contiene los archivos de configuración de mi entorno de desarrollo personalizado. Está diseñado para funcionar sobre una instalación limpia de **Archcraft**, una distribución de Linux basada en Arch que viene preconfigurada con herramientas y ajustes optimizados.
 
 El entorno utiliza BSPWM (Binary Space Partitioning Window Manager) como gestor de ventanas, proporcionando un manejo eficiente y personalizable de las ventanas en el escritorio. Para la gestión de atajos de teclado, se utiliza SXHKD (Simple X Hot Key Daemon), que permite una configuración flexible y rápida de los atajos para mejorar la productividad.
 
@@ -50,10 +59,118 @@ El entorno utiliza BSPWM (Binary Space Partitioning Window Manager) como gestor 
 
 Con esta configuración, busco crear un entorno de desarrollo ágil, minimalista y altamente eficiente, optimizado para mis necesidades y preferencias.
 
-Dentro de estos dotfiles tambien Se encuentran mis wallpapers y mis configuraciones de aplicaciones de windows
+Dentro de estos dotfiles tambien Se encuentran mis configuraciones de algunas aplicaciones de windows.
+
+## wallpapers
+
+puedes encontrar mis [wallpapers here](https://github.com/pabrax/wallpapers).
+
+# setup
+
+Comencemos.
+
+primero realizamos un backup de nuestros archivos actuales y los almacenaremos en la ruta `~/.backups`.
+
+***crear backup de archivos***
+
+```bash
+mkdir ~/.backups
+cp -r ~/.* ~/.backups
+```
+
+## Paquetes escenciales
+
+### Arch
+
+```sh
+sudo pacman -S python python-pip pastel git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc zsh rofi polybar fzf vim ranger feh neofetch htop neovim bat
+``` 
+
+### debian/ubuntu
+
+para algunos sistemas basados en Debian Es necesario compilar algunos paquetes importantes para que la configuracion principalmente de los TWM funcione.
+
+```sh
+sudo apt-get install python3 python3-pip git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc g++ zsh rofi polybar fzf vim ranger feh neofetch htop
+```
+
+#### picom
+
+para instalar picom es necesario compilar la herramienta (fundamental para la composicion de ventanas en X11), desde apt en mi caso me dio algunos errores
+
+```bash
+sudo apt-get install libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev
+```
+
+```bash
+git clone https://github.com/yshui/picom.git
+cd picom
+```
+
+**build**
+
+```bash
+meson setup --buildtype=release build
+ninja -C build
+```
+
+**install**
+
+```bash
+ninja -C build install
+```
+
+#### pastel
+
+obtenemos el recurso y lo instalamos
+```bash
+wget "https://github.com/sharkdp/pastel/releases/download/v0.8.1/pastel_0.8.1_amd64.deb"
+sudo dpkg -i pastel_0.8.1_amd64.deb
+```
+luego eliminamos su instalador
+
+```bash
+rm -rf pastel_0.8.1_amd64.deb
+```
+
+### oh my zsh
+
+para configurar correctamente zsh instalaremos ohmyzsh que nos permitira manejar diferentes plugins
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### plugins:
+
+**powerlevel10k**
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+**szh syntax highlighting**
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+**zsh autosuggestions**
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+
 
 
 # bspwm
+
+para modificar la configuracion de bspwm accede a la ruta `~/.config/bspwm`, dentro de esta carpeta se encuentran los archivos necesarios de configuracion para `bspwm`, `sxhkd`, `picom`, `polybar` y `rofi` 
+
+Modifica el archivo `~/.config/bspwm/themes/nombre-del-tema/theme.sh` si quieres cambiar los parametros de ejecucion de un tema en especifico
+
+para cambiar los keymaps accede al archivo `~/.config/bspwm/sxhkdrc`
+
+para gestionar las reglas de bspwm y las configuraciones generales de bswpm accede al archivo `~/.config/bspwm/bspwmrc`
 
 ## keymaps
 
@@ -123,7 +240,7 @@ Dentro de estos dotfiles tambien Se encuentran mis wallpapers y mis configuracio
 | `alt + {_,shift + }Tab` | `bspc node -f {next.local,prev.local}` |
 | `super + {Tab,grave}` | `bspc {node,desktop} -f last` |
 
-# themes
+# Galeria
 
 ## current theme
 ![current theme](.screenshots/bspterm.png)

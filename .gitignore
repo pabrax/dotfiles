@@ -9,6 +9,7 @@
 
 # shells
 !.zshrc
+!.oh-my-zsh/
 !.bashrc
 
 # editors
@@ -23,3 +24,5 @@
 
 # windows files
 !.windows_files/
+
+

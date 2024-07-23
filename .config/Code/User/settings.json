@@ -13,7 +13,7 @@
         "editor.formatOnType": true
     },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Aura Dark (Soft Text)",
+    "workbench.colorTheme": "Black",
     "security.workspace.trust.untrustedFiles": "open",
     "oneDarkPro.bold": true,
     "oneDarkPro.vivid": true,

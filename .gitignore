@@ -17,10 +17,6 @@
 # layout
 !.screenlayout
 
-# wallpapers
-
-!Pictures/
-
 # screenshots
 !.screenshots/
 !screenshots/**

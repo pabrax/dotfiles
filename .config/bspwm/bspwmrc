@@ -21,9 +21,9 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 ## Bspwm colors
 BSPWM_FBC='#cecece'
-BSPWM_NBC='#000000'
+BSPWM_NBC='#070707'
 BSPWM_ABC='#313033'
-BSPWM_PFC='#c1c1c1'
+BSPWM_PFC='#71c64e'
 
 ## Bspwm appearance
 BSPWM_BORDER='1'

@@ -13,7 +13,7 @@
         "editor.formatOnType": true
     },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Black",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "security.workspace.trust.untrustedFiles": "open",
     "oneDarkPro.bold": true,
     "oneDarkPro.vivid": true,

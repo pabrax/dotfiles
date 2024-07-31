@@ -48,7 +48,7 @@ terminal_font_name='JetBrainsMono Nerd Font'
 terminal_font_size='10'
 
 # vscode
-vscode_theme='Aura Dark (Soft Text)'
+vscode_theme='GitHub Dark Colorblind (Beta)'
 
 # Geany
 geany_colors='hack.conf'

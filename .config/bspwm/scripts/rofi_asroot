@@ -4,7 +4,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/bspwm"
-STYLE="black_metal"
+STYLE="dark_horizon"
 RASI="$DIR/themes/$STYLE/rofi/asroot.rasi"
 
 # Theme Elements

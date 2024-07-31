@@ -13,6 +13,7 @@
 - [setup](#setup)
   - [Paquetes escenciales](#paquetes-escenciales)
     - [Arch](#arch)
+      - [instalar paquetes de AUR (paquetes de terceros)](#instalar-paquetes-de-aur-paquetes-de-terceros)
     - [debian/ubuntu](#debianubuntu)
       - [picom](#picom)
       - [pastel](#pastel)
@@ -88,6 +89,20 @@ cp -r ~/.* ~/.backups
 sudo pacman -S python python-pip pastel git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc zsh rofi polybar fzf wget curl unzip vim ranger feh neofetch htop neovim bat
 ``` 
 
+#### instalar paquetes de AUR (paquetes de terceros) 
+
+para instalar paquetes de terceros que no estan en pacman puedes usar `yay`
+
+```bash
+yay -S visual-studio-code-bin
+```
+
+para buscar un paquete puedes usar el parametro `-Ss`
+
+```bash
+yay -Ss discord
+```
+
 ### debian/ubuntu
 
 para algunos sistemas basados en Debian Es necesario compilar algunos paquetes importantes para que la configuracion principalmente de los TWM funcione.
@@ -161,6 +176,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+si quieres instalar los plugins y apariencia al usuario `root` puedes repetir el proceso de instalacion de ohmyzsh para este usuario.
 
 ## fuentes
 

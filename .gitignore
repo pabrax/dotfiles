@@ -25,4 +25,5 @@
 # windows files
 !.windows_files/
 
-
+# scripts
+!scripts/

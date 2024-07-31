@@ -18,6 +18,8 @@
       - [pastel](#pastel)
     - [oh my zsh](#oh-my-zsh)
       - [plugins:](#plugins)
+  - [fuentes](#fuentes)
+    - [instalar fuentes manualmente](#instalar-fuentes-manualmente)
 - [bspwm](#bspwm)
   - [keymaps](#keymaps)
     - [Terminal (kitty)](#terminal-kitty)
@@ -83,7 +85,7 @@ cp -r ~/.* ~/.backups
 ### Arch
 
 ```sh
-sudo pacman -S python python-pip pastel git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc zsh rofi polybar fzf vim ranger feh neofetch htop neovim bat
+sudo pacman -S python python-pip pastel git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc zsh rofi polybar fzf wget curl unzip vim ranger feh neofetch htop neovim bat
 ``` 
 
 ### debian/ubuntu
@@ -91,7 +93,7 @@ sudo pacman -S python python-pip pastel git curl bspwm kitty sxhkd ncmpcpp mpd c
 para algunos sistemas basados en Debian Es necesario compilar algunos paquetes importantes para que la configuracion principalmente de los TWM funcione.
 
 ```sh
-sudo apt-get install python3 python3-pip git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc g++ zsh rofi polybar fzf vim ranger feh neofetch htop
+sudo apt-get install python3 python3-pip git curl bspwm kitty sxhkd ncmpcpp mpd cmake gcc g++ zsh rofi polybar fzf vim ranger feh neofetch htop wget curl unzip
 ```
 
 #### picom
@@ -160,6 +162,41 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 
+## fuentes
+
+para instalar las fuentes necesarias simplemente puedes correr el script `fontInstaller.sh` dentro de la carpeta de `scripts`. puedes utilizar los siguientes comandos para lograrlo.
+
+```bash
+chmod +x fontsInstaller.sh
+./fontsInstaller.sh
+```
+
+***el script instalara las siguientes fuentes:***
+- Agave
+- CascadiaCode
+- CodeNewRoman
+- ComicShannsMono
+- Hack
+- Iosevka
+- JetbrainsMono
+- Mononoki
+
+Este script descargara las fuentes necesarias y las instalara directamente en el directorio `/usr/share/fonts`
+
+### instalar fuentes manualmente
+
+puedes visitar la pagina de [nerdfonts](https://www.nerdfonts.com/font-downloads) para encontrrar fuentes de tu agrado, simplemente descarga los archivos comprimidos, extraelos y muevelos al directorio `/usr/share/fonts` y por ultimo actualiza las fuentes
+
+aqui un ejemplo del proceso:
+
+```bash
+cd Descargas # or Downloads
+unzip fuente.zip
+sudo mv *.ttf /usr/share/fonts # or use *.otf if you need
+fc-cache -f -v
+```
+
+para configurar las fuentes dentro de bspwm debes acceder a la carpeta de configuracion de bspwm `$HOME/.config/bspwm/themes/TU_TEMA/` y modificar el archivo `theme.bash`
 
 
 # bspwm

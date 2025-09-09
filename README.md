@@ -6,6 +6,44 @@ Este entorno está diseñado para ser **minimalista**, **funcional** y **replica
 El flujo de trabajo está basado en el **tiling window manager i3**, acompañado de herramientas como **polybar**, **rofi**, **dunst**, **picom** y **mpd** para ampliar su funcionalidad.
 Para usuarios que prefieran un entorno de escritorio más tradicional, también se incluyen configuraciones para **Cinnamon**.
 
+![Ayu](./configs_dotfiles/pics/Ayu_screenshot.png)
+
+
+### Indice
+
+-----
+
+### Tabla de Contenidos
+
+- [Pabrax Dotfiles](#pabrax-dotfiles)
+    - [Indice](#indice)
+    - [Tabla de Contenidos](#tabla-de-contenidos)
+  - [Instalacion y Configuracion](#instalacion-y-configuracion)
+    - [Paquetes necesarios](#paquetes-necesarios)
+      - [Otras Distros](#otras-distros)
+    - [Paquetes Opcionales](#paquetes-opcionales)
+    - [Instalar paru (Derivadas de Arch)](#instalar-paru-derivadas-de-arch)
+    - [Otros sistemas](#otros-sistemas)
+  - [Fuentes](#fuentes)
+  - [Repositorios de BlackArch(Solo Arch y derivados)](#repositorios-de-blackarchsolo-arch-y-derivados)
+    - [Instalacion del Repositorio de blackarch](#instalacion-del-repositorio-de-blackarch)
+    - [Verificacion de instalacion](#verificacion-de-instalacion)
+    - [Nota](#nota)
+  - [Keybindings](#keybindings)
+    - [**Kebindings de i3**](#kebindings-de-i3)
+    - [**Lanzadores de Aplicaciones**](#lanzadores-de-aplicaciones)
+    - [**Multimedia y sonido**](#multimedia-y-sonido)
+    - [**Capturas y utilidades**](#capturas-y-utilidades)
+    - [**Manejo de Ventanas**](#manejo-de-ventanas)
+    - [**Redimensionar Ventanas**](#redimensionar-ventanas)
+    - [**Espacios de trabajo**](#espacios-de-trabajo)
+  - [Themes](#themes)
+    - [Cambiar de Tema](#cambiar-de-tema)
+    - [Crear o Modificar un Tema](#crear-o-modificar-un-tema)
+    - [Galería de Temas (Layer0)](#galería-de-temas-layer0)
+
+-----
+
 ## Instalacion y Configuracion
 
 Este entorno está construido sobre i3 como gestor de ventanas principal.

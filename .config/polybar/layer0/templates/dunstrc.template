@@ -1,0 +1,17 @@
+[global]
+frame_color = "{{accent}}"
+separator_color = frame
+highlight = "{{accent}}"
+
+[urgency_low]
+background = "{{bg}}"
+foreground = "{{fg}}"
+
+[urgency_normal]
+background = "{{bg}}"
+foreground = "{{fg}}"
+
+[urgency_critical]
+background = "{{bg}}"
+foreground = "{{fg}}"
+frame_color = "{{red}}"

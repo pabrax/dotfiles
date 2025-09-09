@@ -1,0 +1,30 @@
+{
+  "name": "Ayu",
+  "vscode_theme": "Ayu Dark",
+  "colors": {
+    "BG": "#0A0E14",
+    "FG": "#D0D0D0",
+    "BGA": "#1D2228",
+    "SEP": "#5B6268",
+    "AC": "#F5A97B",
+    "SE": "#7FB1B3",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#F7768E",
+    "PINK": "#F5A97B",
+    "PURPLE": "#BB80B3",
+    "BLUE": "#7AA2F7",
+    "CYAN": "#7FB1B3",
+    "TEAL": "#7FB1B3",
+    "GREEN": "#9BBF76",
+    "LIME": "#A9D8A1",
+    "YELLOW": "#E1D76E",
+    "AMBER": "#F59C42",
+    "ORANGE": "#F5A97B",
+    "BROWN": "#E5C07B",
+    "INDIGO": "#5A5F99",
+    "GRAY": "#4D545C",
+    "BLUE_GRAY": "#1D2228",
+    "BORDERCOLOR": "#F5A97B"
+  }
+}

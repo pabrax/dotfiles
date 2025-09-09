@@ -1,0 +1,30 @@
+{
+  "name": "Dark",
+  "vscode_theme": "One Dark Pro Darker",
+  "colors": {
+    "BG": "#141414",
+    "FG": "#B0B0B0",
+    "BGA": "#1C1C1C",
+    "SEP": "#2C2C2C",
+    "AC": "#FF5555",
+    "SE": "#50FA7B",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#EC7875",
+    "PINK": "#EC407A",
+    "PURPLE": "#BA68C8",
+    "BLUE": "#42A5F5",
+    "CYAN": "#4DD0E1",
+    "TEAL": "#00B19F",
+    "GREEN": "#61C766",
+    "LIME": "#B9C244",
+    "YELLOW": "#FDD835",
+    "AMBER": "#FBC02D",
+    "ORANGE": "#E57C46",
+    "BROWN": "#AC8476",
+    "INDIGO": "#6C77BB",
+    "GRAY": "#9E9E9E",
+    "BLUE_GRAY": "#6D8895",
+    "BORDERCOLOR": "#42A5F5"
+  }
+}

@@ -1,0 +1,16 @@
+####################### Colors via apply-theme #######################
+
+# Define color variables
+set $inactive_bg_color {{inactive_bg}}
+set $inactive_text_color {{inactive_text}}
+set $window_border {{window_border}}
+set $urgent_bg_color {{urgent_bg}}
+set $active_window_color {{active_window}}
+set $active_text_color {{active_text}}
+
+# window colors
+#                       border              background          text            indicator
+client.focused          $active_window_color    $active_window_color    $active_text_color     $window_border
+client.unfocused        $inactive_bg_color      $inactive_bg_color      $inactive_text_color   $inactive_bg_color  
+client.focused_inactive $inactive_bg_color      $inactive_bg_color      $inactive_text_color   $inactive_bg_color
+client.urgent           $urgent_bg_color        $urgent_bg_color        $active_text_color     $urgent_bg_color

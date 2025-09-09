@@ -1,0 +1,30 @@
+{
+  "name": "Synthwave",
+  "vscode_theme": "Catppuccin Macchiato",
+  "colors": {
+    "BG": "#2A2139",
+    "FG": "#E3DFFF",
+    "BGA": "#372D4D",
+    "SEP": "#574B7C",
+    "AC": "#FF79C6",
+    "SE": "#8BE9FD",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#FF6F61",
+    "PINK": "#FF79C6",
+    "PURPLE": "#BD93F9",
+    "BLUE": "#6272A4",
+    "CYAN": "#8BE9FD",
+    "TEAL": "#50FA7B",
+    "GREEN": "#69F0AE",
+    "LIME": "#CCFF90",
+    "YELLOW": "#FFD700",
+    "AMBER": "#FFCA28",
+    "ORANGE": "#FF8C42",
+    "BROWN": "#A67C52",
+    "INDIGO": "#4B0082",
+    "GRAY": "#B0A9C4",
+    "BLUE_GRAY": "#372D4D",
+    "BORDERCOLOR": "#FF79C6"
+  }
+}

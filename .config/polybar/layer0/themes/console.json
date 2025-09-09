@@ -1,0 +1,30 @@
+{
+  "name": "Console",
+  "vscode_theme": "Black",
+  "colors": {
+    "BG": "#000000",
+    "FG": "#00FF00",
+    "BGA": "#121212",
+    "SEP": "#1A1A1A",
+    "AC": "#00FF00",
+    "SE": "#00AA00",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#FF3333",
+    "PINK": "#FF66A3",
+    "PURPLE": "#9B59B6",
+    "BLUE": "#3399FF",
+    "CYAN": "#00FFFF",
+    "TEAL": "#00CC99",
+    "GREEN": "#00FF00",
+    "LIME": "#CCFF33",
+    "YELLOW": "#FFFF00",
+    "AMBER": "#FFB733",
+    "ORANGE": "#FF8000",
+    "BROWN": "#704214",
+    "INDIGO": "#5A5AFF",
+    "GRAY": "#A9A9A9",
+    "BLUE_GRAY": "#808080",
+    "BORDERCOLOR": "#00AA00"
+  }
+}

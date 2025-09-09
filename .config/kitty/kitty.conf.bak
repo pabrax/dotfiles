@@ -1,0 +1,71 @@
+# BEGIN_KITTY_THEME
+# Wizzy Bright
+#include current-theme.conf
+# END_KITTY_THEME
+
+#colors config file
+include colors.conf
+
+# cursor
+
+cursor_shape beam
+
+cursor_shape_unfocused hollow
+
+
+# background 
+
+background_opacity 0.8
+
+# font style
+
+font_family      ComicShannsMono Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+font_size 13.0
+
+disable_ligatures never
+
+# bell 
+
+enable_audio_bell none
+visual_bell_duration 0.0
+
+
+## maps 
+
+# layouts
+
+map ctrl+left neighboring_window left
+map ctrl+right neighboring_window right
+map ctrl+up neighboring_window up
+map ctrl+down neighboring_window down
+
+map ctrl+shift+enter new_window_with_cwd
+map ctrl+shift+t new_tab_with_cwd
+
+# tabs
+
+tab_bar_sytle powerline
+
+# copy buffer
+
+map f1 copy_to_buffer a
+map f2 paste_from_buffer a
+
+detect_urls yes
+
+repaint_delay 10
+input_delay 0
+sync_to_monitor yes
+
+
+
+
+
+
+
+
+

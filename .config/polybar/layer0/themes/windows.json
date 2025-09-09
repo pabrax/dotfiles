@@ -1,0 +1,30 @@
+{
+  "name": "Windows",
+  "vscode_theme": "Visual Studio Dark",
+  "colors": {
+    "BG": "#0D1117",
+    "FG": "#D1D5DA",
+    "BGA": "#161B22",
+    "SEP": "#21262D",
+    "AC": "#1F6FEB",
+    "SE": "#0A84FF",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#F85149",
+    "PINK": "#FF7EDB",
+    "PURPLE": "#A371F7",
+    "BLUE": "#0A84FF",
+    "CYAN": "#76E4F7",
+    "TEAL": "#2B8EAD",
+    "GREEN": "#2EA043",
+    "LIME": "#B5E853",
+    "YELLOW": "#F2CC60",
+    "AMBER": "#E9A63A",
+    "ORANGE": "#F0883E",
+    "BROWN": "#7A5C3E",
+    "INDIGO": "#3B5CCC",
+    "GRAY": "#8B949E",
+    "BLUE_GRAY": "#2D333B",
+    "BORDERCOLOR": "#0A84FF"
+  }
+}

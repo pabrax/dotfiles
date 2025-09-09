@@ -1,0 +1,30 @@
+{
+  "name": "Gruvbox",
+  "vscode_theme": "Gruvbox Material Dark",
+  "colors": {
+    "BG": "#282828",
+    "FG": "#EBDBB2",
+    "BGA": "#3C3836",
+    "SEP": "#504945",
+    "AC": "#FB4934",
+    "SE": "#8EC07C",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#FB4934",
+    "PINK": "#D75F5F",
+    "PURPLE": "#B16286",
+    "BLUE": "#83A598",
+    "CYAN": "#8EC07C",
+    "TEAL": "#8EC07C",
+    "GREEN": "#A9B665",
+    "LIME": "#B8BB26",
+    "YELLOW": "#FABD2F",
+    "AMBER": "#FE8019",
+    "ORANGE": "#FF8800",
+    "BROWN": "#D79921",
+    "INDIGO": "#5F66A2",
+    "GRAY": "#A89984",
+    "BLUE_GRAY": "#3C3836",
+    "BORDERCOLOR": "#FB4934"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Blue",
+  "vscode_theme": "Night Owl",
+  "colors": {
+    "BG": "#021D32",
+    "FG": "#E0F2FE",
+    "BGA": "#0C355B",
+    "SEP": "#01070E",
+    "AC": "#18629C",
+    "SE": "#103D68",
+    "WHITE": "#FFFFFF",
+    "BLACK": "#000000",
+    "RED": "#BF4D4D",
+    "PINK": "#E57373",
+    "PURPLE": "#9575CD",
+    "BLUE": "#18629C",
+    "CYAN": "#4DD0E1",
+    "TEAL": "#00A8C5",
+    "GREEN": "#5CB85C",
+    "LIME": "#A3D3A1",
+    "YELLOW": "#FFEB3B",
+    "AMBER": "#FFC107",
+    "ORANGE": "#FF9800",
+    "BROWN": "#8D6E63",
+    "INDIGO": "#3F51B5",
+    "GRAY": "#B0BEC5",
+    "BLUE_GRAY": "#103D68",
+    "BORDERCOLOR": "#103D68"
+  }
+}

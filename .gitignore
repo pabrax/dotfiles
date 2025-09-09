@@ -1,6 +1,7 @@
 # Ignorar todo en el directorio home excepto lo especificado
 /*
 !/scripts/
+!/configs_dotfiles/
 !/.config/
 !/.gitignore
 !/README.md
